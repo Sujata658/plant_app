@@ -2,7 +2,7 @@ import { useGlobalContext } from "./PlantContext";
 import { NavLink } from "react-router-dom";
 
 export default function PlantsDescription() {
-  
+  const { isLoading, plants } = useGlobalContext();
   if (isLoading) {
     return <div className="loading">Loading....</div>;
   } else {
