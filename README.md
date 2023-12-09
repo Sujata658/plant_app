@@ -4,8 +4,7 @@ Welcome to PlantApp!
 
 ## About
 
-PlantApp is a web application dedicated to providing information about various plants. Whether you're a seasoned botanist or just starting your gardening journey, PlantApp is here to help you explore the fascinating world of plants.
-
+PlantApp is a web application dedicated to providing information about various plants. This app was developed for practicing react skills.
 
 ## Installation
 Clone and run the react app using 'npm run'.
