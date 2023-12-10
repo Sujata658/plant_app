@@ -10,12 +10,12 @@ export default function Home() {
           <div className="sub-title">
           <h7>Welcome to our Botanic Oasis!</h7>
           </div>
-          <div className="title-phrase">
+          <div className="title-phrase" id="mbl">
           <h1>Explore nature's wonders in lush green realms</h1>
           </div>
           
-          <p>Our plants paradise is a haven for plant enthusiasts, whether you're a seasoned gardener or just starting your botanical journey. Start your green adventure today!</p>
-          <div className="button_items">
+          <p id="mbl">Our plants paradise is a haven for plant enthusiasts, whether you're a seasoned gardener or just starting your botanical journey. Start your green adventure today!</p>
+          <div className="button_items" id="mbl">
             <div className="button button_green" onClick={()=>{return navigate('/plants')}}>
                 Explore Now
             </div>

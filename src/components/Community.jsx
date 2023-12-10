@@ -1,5 +1,7 @@
+import Signin from "./Signin";
+
 export default function Community (){
     return <>
-        <p>This is Community page</p>
+       <Signin/>
     </>
 }
