@@ -14,9 +14,6 @@
   font-family: "Tilt Neon", sans-serif;
   align-items: center;
 }
-.active_class{
-  color: white;
-}
 .menu_items {
   flex-grow: 2;
   display: flex;
@@ -26,6 +23,10 @@
 .nav_elem a {
   text-decoration: none;
   color: #c78b62;
+}
+.nav_elem a.active {
+  text-decoration: none;
+  color: #df7630;
 }
 .button_items {
   display: flex;
@@ -43,11 +44,64 @@
 }
 .button_green{
   background-color: #4f782f;
+  color: white;
 }
 .button_red{
   border: 2px solid #c78b62; 
   color: #4f782f;
 }
+.hamburger{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  
+  @media only screen and (max-width: 768px) {
+    .app_div {
+      padding: 0 20px;
+    }
+    .hamburger{
+      display: block;
+      cursor: pointer;
+    }
+    .menu_items {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px; 
+      width: 100%;
+      padding: 30px 0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .nav_elem{
+      justify-content: space-between;
+    }
+  .res-menu{
+    background-color: #fff;
+  }
+    .menu-open .menu_items {
+      display: flex;
+    }
+  
+    .menu_items a {
+      background-color: white;
+
+    }
+    .main_div {
+      flex-direction: column;
+    }
+    #mbl {
+      display: none;
+    }
+    .sub-title{
+      text-align: center;
+      justify-content: center;
+    }
+  
+  }
+}
+
 .main_div {
   display: flex;
 }
@@ -91,17 +145,18 @@
   margin: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: #ff0000; 
+  color: #c78b62; 
 }
 
 .plants-container {
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 2%;
+  border-radius: 10px;border: 2px solid #4f782f;
+  box-shadow:  #1a1a1a5b 0px 0px 10px 0px;
 }
 
 
 .cards {
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -135,13 +190,12 @@ h4{
 
 .about-container {
   max-width: 800px;
-  margin: auto;
-  height: 60vh;
+  margin: 3% auto;
   padding: 20px;
   display: flex;
-  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  border: 2px solid #4f782f;
+  box-shadow:  #1a1a1a5b 0px 0px 10px 0px;
 }
 
 .about-title {
@@ -149,32 +203,31 @@ h4{
   font-weight: bold;
   padding: 20px;
   margin-bottom: 30px;
-  background-color: white;
+  text-align: center;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: white;
+  
 }
 
 .about-text {
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: white;
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.4;
+  color:#4f782f;
 }
 
 .about-description {
   flex-basis: 50%;
-  background-color: white;
   margin: 20px;
 }
 
 .about-image-container {
   flex-basis: 50%;
   text-align: center;
-  background-color: white;
 }
 
 .about-image {
@@ -182,6 +235,61 @@ h4{
   height: 50vh;
   margin: 50px auto;
   border-radius: 8px;
+}
+
+.signin_box {
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 5%;
+  border: 2px solid #4f782f;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signin_box__form form {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+}
+input {
+  flex-basis: 95%;
+  padding: 10px;
+  font-size: 16px;
   background-color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+.iconinput{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 2%;
+}
+.signinicon{
+  flex-basis:5%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+.signin_box__form button{
+  padding: 3%;
+  font-size: 16px;
+  background-color: #4f782f;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  color: white;
+  margin-top: 5%;
+}
+.signin-title{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Tilt Neon", sans-serif;
+  margin-bottom: 2%;
+  text-align: center;
 }
 

@@ -3,6 +3,7 @@ import About from "./components/About"
 import Plants from "./components/Plants";
 import Community from "./components/Community";
 import Care from "./components/Care";
+import Signin from "./components/Signin";
 import PlantsDescription from "./components/PlantsDescription";
 
 import Navbar from "./components/Navbar";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/about" Component={About} />
             <Route path="/care" Component={Care} />
             <Route path="/community" Component={Community} />
+            <Route path="/signin" Component={Signin} />
           </Routes>
         </BrowserRouter>
       </div>
