@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/plant_app/static/css/main.892eccd7.css",
-    "main.js": "/plant_app/static/js/main.a1428392.js",
+    "main.js": "/plant_app/static/js/main.979c6040.js",
     "static/media/plantimage.png": "/plant_app/static/media/plantimage.0581bde08a1d0d16c4ef.png",
     "index.html": "/plant_app/index.html",
     "main.892eccd7.css.map": "/plant_app/static/css/main.892eccd7.css.map",
-    "main.a1428392.js.map": "/plant_app/static/js/main.a1428392.js.map"
+    "main.979c6040.js.map": "/plant_app/static/js/main.979c6040.js.map"
   },
   "entrypoints": [
     "static/css/main.892eccd7.css",
-    "static/js/main.a1428392.js"
+    "static/js/main.979c6040.js"
   ]
 }
